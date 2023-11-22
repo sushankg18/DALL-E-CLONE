@@ -1,7 +1,13 @@
 nav {
   display: flex;
   justify-content: space-between;
+  background-color: #000;
   color: #fff;
+  position: fixed; /* Use 'fixed' instead of 'sticky' */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
   align-items: center;
   padding: 1.2rem 1.5rem;
   .logo-with-items {

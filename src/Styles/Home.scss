@@ -1,6 +1,6 @@
 .Home-component {
   color: white;
-  height: 87vh;
+  height: 95vh;
   position: relative;
   margin-bottom: 3rem;
   .home-component-items {
@@ -16,6 +16,10 @@
   }
   p {
     font-size: 1.2rem;
+    // &::selection{
+    //   background-color: white;
+    //   color: black;
+    // }
   }
   h1 {
     font-size: 9rem;
@@ -125,11 +129,333 @@
   width: 96vw;
   margin: auto;
   padding: 1rem 0;
-  height: 100vh;
+  height: 35vh;
   .Home-part-4-heading {
     color: white;
     width: 100%;
     font-family: none;
     font-size: 3.4rem;
+  }
+}
+
+.Home-part-5 {
+  display: flex;
+  color: #818181;
+  width: 96vw;
+  margin: auto;
+  gap: 2rem;
+  p {
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding-bottom: 0.8rem;
+    &:first-child {
+      color: white;
+      border-bottom: 1px solid white;
+    }
+  }
+}
+.vertical-line-gray {
+  width: 96vw;
+  margin: auto;
+  height: 1px;
+  background-color: rgb(25, 25, 25);
+}
+.Home-part-5-main-part {
+  width: 96vw;
+  margin: auto;
+  display: flex;
+  height: 130vh;
+  .Home-pt-5-left {
+    width: 30%;
+    height: fit-content;
+    padding: 3rem 0;
+    p {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      &:last-child {
+        display: flex;
+        align-items: center;
+        text-decoration: underline white;
+        width: fit-content;
+        gap: 0.6rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
+  .Home-pt-5-right {
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    padding: 3rem 0;
+    .Home-pt-5-right-div {
+      border: 1px solid rgb(65, 65, 65);
+      position: absolute;
+      right: 0;
+      width: 65%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      .Home-pt-5-right-div-header {
+        border-bottom: 1px solid rgb(65, 65, 65);
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        padding-bottom: 1.5rem;
+        p {
+          font-size: 1.2rem;
+          color: #98a0a8;
+        }
+      }
+      .Home-pt-5-right-div-images {
+        color: white;
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.Home-part-6 {
+  width: 96vw;
+  margin: auto;
+  padding: 1rem 0;
+  color: white;
+  font-family: none;
+  font-size: 3.5rem;
+}
+.Home-part-7-images {
+  width: 96vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  padding-bottom: 5rem;
+  .Home-part-7-image1,
+  .Home-part-7-image2 {
+    width: 49%;
+    color: white;
+    font-size: 0.8rem;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.Home-part-8 {
+  padding: 2rem 0;
+  width: 96vw;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 6rem;
+  .Home-pt-8-up {
+    p {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+  .Home-pt-8-down {
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 50%;
+    }
+    p:first-child {
+      font-size: 4rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.Home-part-9 {
+  color: white;
+  width: 96vw;
+  margin: auto;
+  .Home-pt-9-nav {
+    padding: 0.7rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    p:first-child {
+      font-size: 3rem;
+      font-family: none;
+    }
+    p:last-child {
+      text-decoration: underline white;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .Home-pt-9-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 4rem;
+    padding-bottom: 6rem;
+    .Home-part-9-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      cursor: pointer;
+      p {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      .Home-part-9-card-img {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.Home-part-10 {
+  display: flex;
+  flex-direction: column;
+  width: 96vw;
+  margin: auto;
+  color: white;
+  .Home-pt-10-line-1 {
+    display: flex;
+    width: 100%;
+    padding: .7rem 0;
+    border-bottom: 1px solid gray;
+    div {
+      width: 50%;
+      font-size: 1.6rem;
+      padding-bottom: 5rem;
+    }
+    div:first-child {
+      font-size: 3rem;
+      font-family: none;
+    }
+  }
+
+  .Home-pt-10-line-2 {
+    display: flex;
+    width: 100%;
+    padding: .7rem 0;
+    border-bottom: 1px solid gray;
+    div {
+      width: 50%;
+      font-size: 1.1rem;
+      padding-bottom: 5rem;
+    }
+    div:first-child {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    .Home-pt10-l2-div{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      p:last-child{
+        text-decoration: underline white;
+      }
+    }
+  }
+
+  .Home-pt-10-line-3 {
+    display: flex;
+    width: 100%;
+    padding: .7rem 0;
+    border-bottom: 1px solid gray;
+    div {
+      width: 50%;
+      font-size: 1.1rem;
+      padding-bottom: 5rem;
+    }
+    div:first-child {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    .Home-pt10-l3-div{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      p:last-child{
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+        text-decoration: underline white;
+      }
+    }
+  }
+
+  .Home-pt-10-line-4 {
+    display: flex;
+    width: 100%;
+    padding: .7rem 0;
+    div {
+      width: 50%;
+      font-size: 1.1rem;
+      padding-bottom: 5rem;
+    }
+    div:first-child {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .Home-pt10-l4-div{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      p:last-child{
+        text-decoration: underline white;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+.Home-part-11{
+  width: 96vw;
+  margin: auto;
+  color: white;
+  p{
+    font-size: 3.5rem;
+    font-family: none;
+  }
+}
+
+.Home-part-12-video{
+  padding: 4rem;
+  width: 96vw;
+  margin: auto;
+  video{
+    width: 100%;
+    object-fit: contain;
   }
 }
