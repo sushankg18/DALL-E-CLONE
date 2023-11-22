@@ -1,0 +1,135 @@
+.Home-component {
+  color: white;
+  height: 87vh;
+  position: relative;
+  margin-bottom: 3rem;
+  .home-component-items {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding-left: 18rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  .home-component-items-div-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .home-one-line-para {
+    font-size: 1.8rem;
+  }
+  .home-component-items-bottom {
+    display: flex;
+    gap: 2rem;
+    .home-component-items-bottom-p1 {
+      border: 1px solid white;
+      padding: 0.3rem 0.7rem;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+    .home-component-items-bottom-p2 {
+      text-decoration: underline white;
+      cursor: pointer;
+    }
+  }
+}
+
+.Big-video {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 5rem;
+  .Big-video-Video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.vertical-line {
+  width: 96vw;
+  margin: auto;
+  height: 1px;
+  background-color: white;
+}
+
+.Home-part-3 {
+  width: 96vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  height: 90vh;
+  margin: auto;
+  padding: 1rem 0;
+  .Home-part-3-top {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    p {
+      &:nth-child(2) {
+        text-decoration: underline white;
+        cursor: pointer;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .Home-part-3-cards {
+    display: flex;
+    gap: 1rem;
+    .Home-part-3-card {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      cursor: pointer;
+      &:hover {
+        p:first-child {
+          text-decoration: underline white;
+        }
+      }
+      .Home-part-3-card-img {
+        width: 22rem;
+        height: 22rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      color: white;
+    }
+  }
+}
+
+.Home-part-4 {
+  width: 96vw;
+  margin: auto;
+  padding: 1rem 0;
+  height: 100vh;
+  .Home-part-4-heading {
+    color: white;
+    width: 100%;
+    font-family: none;
+    font-size: 3.4rem;
+  }
+}
