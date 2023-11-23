@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../Styles/Home.scss";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import HomeVideo from "../Assets/HOME-VIDEO.mp4";
-import LastVideo from '../Assets/in-visible-effect-video.mp4'
+import LastVideo from "../Assets/in-visible-effect-video.mp4";
+import { FaArrowUpLong } from "react-icons/fa6";
+import { LuConstruction } from "react-icons/lu";
+import Logo from "../Assets/openai-logo.png";
 const Home = () => {
   const [firstCard, setFirstCard] = useState([]);
 
@@ -59,7 +62,13 @@ const Home = () => {
     ];
     setSecondCard(lineSecondCardObj);
   }, []);
-  console.log(secondCard);
+
+  const backToTopBtn = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", 
+    });
+  };
   return (
     <>
       <div className="Home-component">
@@ -305,10 +314,157 @@ const Home = () => {
       </div>
 
       <div className="Home-part-12-video">
-      <video className="last-video-Video" muted autoPlay loop>
+        <video className="last-video-Video" muted autoPlay loop>
           <source src={LastVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+      </div>
+
+      <div className="Home-part-13">
+        <div className="Home-pt-13-left">
+          <p>Credits</p>
+        </div>
+        <div className="Home-pt-13-right">
+          <div className="Home-pt-13-rt-dv-1">
+            <p>Research Advancements</p>
+            <p>
+              Aditya Ramesh, Prafulla Dhariwal, Alex Nichol, Casey Chu, Mark
+              Chen
+            </p>
+          </div>
+
+          <div className="Home-pt-13-rt-dv-1">
+            <p>Engineering, Design, Product, and Prototyping</p>
+            <p>
+              Jeff Belgum, Dave Cummings, Jonathan Gordon, Chris Hallacy, Shawn
+              Jain, Joanne Jang, Fraser Kelton, Vishal Kuo, Joel Lehman, Rachel
+              Lim, Bianca Martin, Evan Morikawa, Rajeev Nayak, Glenn Powell,
+              Krijn Rijshouwer, David Schnurr, Maddie Simens, Kenneth Stanley,
+              Felipe Such, Chelsea Voss, Justin Jay Wang
+            </p>
+          </div>
+
+          <div className="Home-pt-13-rt-dv-1">
+            <p>Comms, Policy, Legal, Ops, Safety, and Security</p>
+            <p>
+              Steven Adler, Lama Ahmad, Miles Brundage, Kevin Button, Che Chang,
+              Fotis Chantzis, Derek Chen, Frances Choi, Steve Dowling, Elie
+              Georges, Shino Jomoto, Aris Konstantinidis, Gretchen Krueger,
+              Andrew Mayne, Pamela Mishkin, Bob Rotsted, Natalie Summers, Dave
+              Willner, Hannah Wong
+            </p>
+          </div>
+
+          <div className="Home-pt-13-rt-dv-1">
+            <p>Acknowledgments</p>
+            <p>
+              Thanks to those who helped with and provided feedback on this
+              release: Sandhini Agarwal, Sam Altman, Chester Cho, Peter
+              Hoeschele, Jacob Jackson, Jong Wook Kim, Matt Knight, Jason Kwon,
+              Anna Makanju, Katie Mayer, Bob McGrew, Luke Miller, Mira Murati,
+              Adam Nace, Hyeonwoo Noh, Cullen O’Keefe, Long Ouyang, Michael
+              Petrov, Henrique Ponde de Oliveira Pinto, Alec Radford, Girish
+              Sastry, Pranav Shyam, Aravind Srinivas, Ilya Sutskever, Preston
+              Tuggle, Arun Vijayvergiya, Peter Welinder
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="vertical-line"></div>
+
+      <div className="Home-part-14">
+        <p>Start creating images with DALL·E.</p>
+        <button>
+          Try DALL&#183;E <MdOutlineArrowOutward />
+        </button>
+      </div>
+
+      <div className="Home-part-15">
+        <div className="Home-pt-15-left">
+          <img src={Logo} alt="" />
+        </div>
+
+        <div className="Home-pt-15-right">
+          <div>
+            <p>Research</p>
+            <ul>
+              <li>Overview</li>
+              <li>Index</li>
+              <li>GPT-4 </li>
+              <li>DALL·E 3</li>
+            </ul>
+          </div>
+          <div>
+            <p>API</p>
+            <ul>
+              <li>Overview</li>
+              <li>Data privacy</li>
+              <li>Privacy</li>
+              <li>
+                Docs <MdOutlineArrowOutward />{" "}
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p>ChatGPT</p>
+            <ul>
+              <li>Overview</li>
+              <li>Enterprise</li>
+              <li>
+                Try ChatGPT <MdOutlineArrowOutward />{" "}
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p>Company</p>
+            <ul>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Careers </li>
+              <li>Charter</li>
+              <li>Security</li>
+              <li>Customer stories</li>
+              <li>Safety</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="vertical-line"></div>
+
+      <div className="Home-part-16">
+        <div className="Home-pt-16-left">
+          <p>OpenAI © 2015 – 2023</p>
+          <p>Terms and Policies</p>
+          <p>Privacy policies</p>
+          <p>Brand guidelines</p>
+        </div>
+        <div className="Home-pt-16-right">
+          <div className="Home-pt-16-lt-links">
+            <p>Twitter</p>
+            <p>Github</p>
+            <p>Youtube</p>
+            <p>SoundCloud </p>
+            <p>Linkedin</p>
+          </div>
+          <div className="Home-pt-16-lt-TOPBTN">
+            <p className="bkt-btn" onClick={backToTopBtn}>
+              Back to top
+              <span>
+                <FaArrowUpLong />
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="construction-div">
+        <h1>
+          THIS SITE IS UNDER CONSTRUCTION <LuConstruction />{" "}
+        </h1>
       </div>
     </>
   );
