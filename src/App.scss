@@ -7,4 +7,12 @@ body{
     font-family: sans-serif;
     background-color: #000;
     overflow-x: hidden;
+    p::selection{
+        background-color: white;
+        color: black;
+    }
+    img::selection{
+        background-color: white;
+        color: black;
+      }
 }

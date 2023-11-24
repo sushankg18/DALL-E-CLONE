@@ -23,6 +23,10 @@
   }
   h1 {
     font-size: 9rem;
+    &::selection {
+      background-color: white;
+      color: black;
+    }
   }
   .home-component-items-div-1 {
     display: flex;
@@ -226,6 +230,7 @@
         img {
           width: 100%;
           object-fit: contain;
+          user-select: none;
         }
       }
     }
@@ -355,10 +360,18 @@
       width: 50%;
       font-size: 1.6rem;
       padding-bottom: 5rem;
+      &::selection {
+        background-color: white;
+        color: black;
+      }
     }
     div:first-child {
       font-size: 3rem;
       font-family: none;
+      &::selection {
+        background-color: white;
+        color: black;
+      }
     }
   }
 
@@ -367,14 +380,23 @@
     width: 100%;
     padding: 0.7rem 0;
     border-bottom: 1px solid gray;
+
     div {
       width: 50%;
       font-size: 1.1rem;
       padding-bottom: 5rem;
+      &::selection {
+        background-color: white;
+        color: black;
+      }
     }
     div:first-child {
       font-size: 1.6rem;
       font-weight: bold;
+      &::selection {
+        background-color: white;
+        color: black;
+      }
     }
     .Home-pt10-l2-div {
       display: flex;
@@ -395,10 +417,18 @@
       width: 50%;
       font-size: 1.1rem;
       padding-bottom: 5rem;
+      &::selection {
+        background-color: white;
+        color: black;
+      }
     }
     div:first-child {
       font-size: 1.6rem;
       font-weight: bold;
+      &::selection {
+        background-color: white;
+        color: black;
+      }
     }
     .Home-pt10-l3-div {
       display: flex;
@@ -421,10 +451,18 @@
       width: 50%;
       font-size: 1.1rem;
       padding-bottom: 5rem;
+      &::selection {
+        background-color: white;
+        color: black;
+      }
     }
     div:first-child {
       font-size: 1.6rem;
       font-weight: bold;
+      &::selection {
+        background-color: white;
+        color: black;
+      }
     }
 
     .Home-pt10-l4-div {
@@ -518,6 +556,10 @@
       background-color: white;
       color: black;
     }
+    &::selection {
+      background-color: white;
+      color: black;
+    }
   }
 }
 .Home-part-15 {
@@ -529,6 +571,7 @@
     width: 50%;
     img {
       width: 8rem;
+      user-select: none;
     }
   }
   .Home-pt-15-right {
@@ -554,6 +597,10 @@
           font-size: 1.1rem;
           &:hover {
             text-decoration: underline;
+          }
+          &::selection {
+            background-color: white;
+            color: black;
           }
         }
       }
@@ -615,17 +662,17 @@
     }
   }
 }
-.construction-div{
+.construction-div {
   width: 100vw;
   height: 70vh;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  h1{
+  h1 {
     border: 1px solid white;
-    padding: 2rem ;
-    border-radius: .7rem;
-    cursor:not-allowed;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    cursor: not-allowed;
   }
 }
