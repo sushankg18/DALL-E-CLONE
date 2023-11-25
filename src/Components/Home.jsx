@@ -461,10 +461,36 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="construction-div">
+      {/* <div className="construction-div">
         <h1>
-          THIS SITE IS UNDER CONSTRUCTION <LuConstruction />{" "}
+          THIS SITE IS UNDER CONSTRUCTION <LuConstruction />
         </h1>
+      </div> */}
+
+      <div className="white-lines-atBottom">
+          <div className="wl-1"></div>
+          <div className="wl-2"></div>
+          <div className="wl-3"></div>
+          <div className="wl-4"></div>
+          <div className="wl-5"></div>
+          <div className="wl-6"></div>
+          <div className="wl-7"></div>
+          <div className="wl-8"></div>
+          <div className="wl-9"></div>
+          <div className="wl-10"></div>
+          <div className="wl-11"></div>
+          <div className="wl-12"></div>
+          <div className="wl-13"></div>
+          <div className="wl-14"></div>
+          <div className="wl-15"></div>
+          <div className="wl-16"></div>
+          <div className="wl-17"></div>
+          <div className="wl-18"></div>
+          <div className="wl-19"></div>
+          <div className="wl-20"></div>
+          <div className="wl-21"></div>
+          <div className="wl-22"></div>
+          <div className="wl-23"></div>
       </div>
     </>
   );
