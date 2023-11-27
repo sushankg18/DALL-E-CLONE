@@ -23,6 +23,7 @@ nav {
         user-select: none;
       }
     }
+    
   }
   ul {
     display: flex;
@@ -54,4 +55,11 @@ nav {
       color: black;
     }
   }
+
+  .menu_btn{
+    display: none;
+  }
+}
+.Small_screen_menu_container{
+  display: none;
 }

@@ -1,0 +1,62 @@
+@media (width <= 376px) {
+  .Home-component {
+    width: 100vw;
+    height: 87vh;
+    top: 13vh;
+    .home-component-items {
+      width: 100%;
+      padding: 0.5rem;
+      height: 100%;
+      p {
+        font-size: 1.1rem;
+      }
+      h1 {
+        font-size: 4.4rem;
+      }
+    }
+  }
+
+  .Home-part-3 {
+    height: fit-content;
+    width: 100vw;
+    .Home-part-3-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .Home-part-3-card {
+      margin-left: 0.8rem;
+    }
+  }
+  .Home-part-4 {
+    height: fit-content;
+    margin-bottom: 4rem;
+    .Home-part-4-heading {
+      font-size: 2rem;
+    }
+  }
+
+  .Home-part-5 {
+    overflow-x: scroll;
+    gap: 1.5rem;
+    p {
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+  }
+  .Home-part-5-main-part {
+    height: fit-content;
+    flex-direction: column;
+    height: 120vh;
+    .Home-pt-5-left {
+        width: 100%;
+      p {
+        font-size: 1rem;
+      }
+    }
+    .Home-pt-5-right{
+        border: 1px solid white;
+        height: fit-content;
+    }
+  }
+}

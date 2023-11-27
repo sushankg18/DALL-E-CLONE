@@ -6,6 +6,7 @@ import LastVideo from "../Assets/in-visible-effect-video.mp4";
 import { FaArrowUpLong } from "react-icons/fa6";
 import { LuConstruction } from "react-icons/lu";
 import Logo from "../Assets/openai-logo.png";
+import "../Styles/HomeMediaQueries.scss"
 const Home = () => {
   const [firstCard, setFirstCard] = useState([]);
 

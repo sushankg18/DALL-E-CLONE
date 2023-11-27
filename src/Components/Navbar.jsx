@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../Assets/openai-logo.png";
 import "../Styles/Navbar.scss";
 import "../Styles/NavMediaQueries.scss"
@@ -6,10 +6,19 @@ import SmallScreenMenu from "./SmallScreenMenu"
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineArrowOutward } from "react-icons/md";
 const Navbar = () => {
-
-  const HandleMenu =()=>{
-    
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const HandleMenu = () => {
+    const menubtn = document.getElementById('Menu_btn')
+    menubtn.innerHTML = "Close"
+    setIsMenuOpen(true);
+    if (menubtn.innerHTML === "Close") {
+      menubtn.addEventListener('click', () => {
+        setIsMenuOpen(false)
+      })
+    }
   }
+
+
   return (
     <div className="nav-container">
       <nav>
@@ -44,9 +53,10 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div>
-          <p onClick={HandleMenu}>Menu</p>
+        <div className="menu_btn">
+          <p id="Menu_btn" onClick={HandleMenu}>Menu</p>
         </div>
+        {isMenuOpen && <SmallScreenMenu />}
       </nav>
     </div>
   );
