@@ -25,7 +25,7 @@
       justify-content: space-between;
     }
     .Home-part-3-card {
-      margin-left: 0.8rem;
+      margin-left: 0.4rem;
     }
   }
   .Home-part-4 {
@@ -47,16 +47,116 @@
   .Home-part-5-main-part {
     height: fit-content;
     flex-direction: column;
-    height: 120vh;
+    height: fit-content;
     .Home-pt-5-left {
-        width: 100%;
+      width: 100%;
       p {
         font-size: 1rem;
       }
     }
-    .Home-pt-5-right{
-        border: 1px solid white;
+    .Home-pt-5-right {
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .Home-pt-5-right-div {
+        position: initial;
+        width: 100%;
+      }
+    }
+  }
+  .Home-part-6 {
+    .Home-part-6-heading {
+      font-size: 1.8rem;
+    }
+  }
+
+  .Home-part-7-images {
+    flex-direction: column;
+    gap: 2rem;
+    .Home-part-7-image1,
+    .Home-part-7-image2 {
+      width: 100%;
+    }
+  }
+
+  .Home-part-8 {
+    .Home-pt-8-up {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    .Home-pt-8-down {
+      flex-direction: column;
+      gap: 2rem;
+      p:first-child {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .Home-part-9 {
+    .Home-pt-9-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      p:first-child {
+        font-size: 1.5rem;
+        font-family: none;
+      }
+    }
+  }
+
+  .Home-part-10 {
+    .Home-pt-10-line-1,
+    .Home-pt-10-line-2,
+    .Home-pt-10-line-3,
+    .Home-pt-10-line-4 {
+      flex-direction: column;
+      padding-bottom: 3rem;
+      div {
+        width: 100%;
         height: fit-content;
+        padding: 0.4rem 0;
+        font-size: 1.2rem;
+      }
+      div:first-child {
+        font-size: 2rem;
+        font-family: none;
+      }
+    }
+  }
+  .Home-part-11 {
+    padding-top: 1rem;
+    p {
+      font-size: 2.3rem;
+    }
+  }
+
+  .Home-part-13 {
+    flex-direction: column;
+    padding-bottom: 4rem;
+    .Home-pt-13-right {
+      width: 100%;
+    }
+  }
+  .Home-part-14 {
+    p {
+      font-size: 2.5rem;
+    }
+  }
+  .Home-part-15 {
+    flex-direction: column;
+    gap: 2rem;
+    .Home-pt-15-right{
+        div{
+            border: 1px solid white;
+            width: 100vw;
+            padding-bottom: 2rem;
+        }
     }
   }
 }
