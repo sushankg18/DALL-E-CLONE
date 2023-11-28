@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../Assets/openai-logo.png";
 import "../Styles/Navbar.scss";
 import "../Styles/NavMediaQueries.scss"
+import "../Styles/HomeMediaQueries.scss"
 import SmallScreenMenu from "./SmallScreenMenu"
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineArrowOutward } from "react-icons/md";
